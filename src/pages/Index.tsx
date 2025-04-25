@@ -8,13 +8,13 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50 flex flex-col">
+    <div className="min-h-screen bg-gradient-to-br from-[#F6F8FA] via-[#E9EBEE] to-[#FDFCFA] flex flex-col">
       {/* Header */}
       <header className="flex justify-between items-center p-6 md:py-10 md:px-20">
         <img
           src="/lovable-uploads/5e2e9f00-b255-44f5-bd70-096253ab93e3.png"
           alt="Gyoza Ventures Logo"
-          className="h-8 md:h-10"
+          className="h-12 md:h-16 object-contain" // Increased logo size and added object-contain
         />
         <a
           href="https://www.linkedin.com/in/moritzlienert/"
