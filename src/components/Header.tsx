@@ -1,4 +1,3 @@
-
 import { Linkedin } from "lucide-react";
 import { Button } from "./ui/button";
 
@@ -24,7 +23,7 @@ const Header = () => {
         <Button
           variant="outline"
           onClick={handleContactClick}
-          className="text-white border-white hover:bg-white hover:text-gray-800"
+          className="text-white border-white hover:bg-white/10 bg-transparent"
         >
           Contact
         </Button>
@@ -42,4 +41,3 @@ const Header = () => {
 };
 
 export default Header;
-
