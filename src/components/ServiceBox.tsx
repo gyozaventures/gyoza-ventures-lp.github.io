@@ -35,7 +35,7 @@ const ServiceBox = ({ title, company, description, isCtaBox, onClick, className 
       )}
       
       {description && !isCtaBox && (
-        <p className="text-gray-600 text-[15px] leading-relaxed">
+        <p className="text-gray-600 text-[10px] leading-relaxed">
           {description}
         </p>
       )}
@@ -50,3 +50,4 @@ const ServiceBox = ({ title, company, description, isCtaBox, onClick, className 
 };
 
 export default ServiceBox;
+
