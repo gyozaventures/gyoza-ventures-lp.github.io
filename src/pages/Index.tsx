@@ -1,4 +1,3 @@
-
 import { Linkedin } from "lucide-react";
 import ServiceBox from "@/components/ServiceBox";
 
@@ -14,7 +13,7 @@ const Index = () => {
         <img
           src="/lovable-uploads/5e2e9f00-b255-44f5-bd70-096253ab93e3.png"
           alt="Gyoza Ventures Logo"
-          className="h-14 md:h-20 object-contain brightness-200" // Increased size and brightness for better visibility
+          className="h-7 md:h-10 object-contain brightness-200"
         />
         <a
           href="https://www.linkedin.com/in/moritzlienert/"
@@ -30,7 +29,7 @@ const Index = () => {
       <main className="flex-1 flex flex-col px-6 md:px-20">
         {/* Headlines */}
         <div className="mb-12 max-w-4xl">
-          <h1 className="text-xl md:text-2xl font-bold text-white mb-3 leading-tight">
+          <h1 className="text-sm md:text-lg font-bold text-white mb-3 leading-tight">
             Partner for Interim Leadership and Growth Execution for Corporates and Start-ups
           </h1>
           <h2 className="text-base md:text-lg text-gray-300 leading-relaxed">
@@ -44,15 +43,18 @@ const Index = () => {
         {/* Service Boxes Grid */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-6xl w-full">
           <ServiceBox 
-            title="Interim CMO – B2B SaaS Company" 
+            title="Interim CMO"
+            company="B2B SaaS Company" 
             description="Led go-to-market strategy and team ramp-up. Established scalable brand and partner ops."
           />
           <ServiceBox 
-            title="Interim Director Operations – IT-Infrastructure Provider"
+            title="Interim Director Operations"
+            company="IT-Infrastructure Provider"
             description="Restructured operations team and processes. Implemented new KPI framework and reporting."
           />
           <ServiceBox 
-            title="Post-Merger Integration Consultant – Healthcare Provider"
+            title="Post-Merger Integration Consultant"
+            company="Healthcare Provider"
             description="Managed integration of two teams post acquisition. Optimized workflows and communication channels."
           />
           <ServiceBox

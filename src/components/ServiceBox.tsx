@@ -4,13 +4,14 @@ import { cn } from "@/lib/utils";
 
 interface ServiceBoxProps {
   title: string;
+  company?: string;
   description?: string;
   isCtaBox?: boolean;
   onClick?: () => void;
   className?: string;
 }
 
-const ServiceBox = ({ title, description, isCtaBox, onClick, className }: ServiceBoxProps) => {
+const ServiceBox = ({ title, company, description, isCtaBox, onClick, className }: ServiceBoxProps) => {
   return (
     <div 
       className={cn(
@@ -21,14 +22,20 @@ const ServiceBox = ({ title, description, isCtaBox, onClick, className }: Servic
       onClick={onClick}
     >
       <h3 className={cn(
-        "text-lg font-semibold mb-2",
+        "text-lg font-semibold mb-1",
         isCtaBox ? "text-white" : "text-gray-800"
       )}>
         {title}
       </h3>
       
+      {company && !isCtaBox && (
+        <p className="text-gray-600 text-sm font-medium mb-2">
+          {company}
+        </p>
+      )}
+      
       {description && !isCtaBox && (
-        <p className="text-gray-600 text-sm leading-relaxed">
+        <p className="text-gray-600 text-xs leading-relaxed">
           {description}
         </p>
       )}
