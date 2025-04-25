@@ -27,19 +27,19 @@ const Index = () => {
       </header>
 
       {/* Main Content */}
-      <main className="flex-1 flex flex-col items-center justify-center px-6 md:px-20">
+      <main className="flex-1 flex flex-col px-6 md:px-20">
         {/* Headlines */}
-        <div className="text-center mb-12 max-w-4xl">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3 leading-tight">
+        <div className="mb-12 max-w-4xl">
+          <h1 className="text-xl md:text-2xl font-bold text-gray-900 mb-3 leading-tight">
             Partner for Interim Leadership and Growth Execution for Corporates and Start-ups
           </h1>
-          <h2 className="text-xl md:text-2xl text-gray-600 leading-relaxed">
+          <h2 className="text-base md:text-lg text-gray-600 leading-relaxed">
             Where Tactical Execution Meets Strategic Thinking
           </h2>
         </div>
 
         {/* Service Boxes Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 max-w-6xl w-full">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-6xl w-full">
           <ServiceBox 
             title="Interim CMO – B2B SaaS Company" 
             description="Led go-to-market strategy and team ramp-up. Established scalable brand and partner ops."
