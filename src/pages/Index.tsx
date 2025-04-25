@@ -1,3 +1,4 @@
+
 import { Linkedin } from "lucide-react";
 import ServiceBox from "@/components/ServiceBox";
 import Header from "@/components/Header";
@@ -30,18 +31,18 @@ const Index = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-6xl w-full">
           <ServiceBox 
             title="Interim CMO"
-            company="B2B SaaS Company" 
-            description="Led go-to-market strategy and team ramp-up. Established scalable brand and partner ops."
+            company="B2B SaaS Provider" 
+            description="Restructured marketing operations and managed channels hands-on. Cut CPL by over 50% and doubled lead volume, driving record quarterly sales."
           />
           <ServiceBox 
             title="Interim Director Operations"
-            company="IT-Infrastructure Provider"
-            description="Restructured operations team and processes. Implemented new KPI framework and reporting."
+            company="IT Infrastructure Provider"
+            description="Built scalable ops and project frameworks. Optimized finance workflows and launched an ecosystem incubator."
           />
           <ServiceBox 
             title="Post-Merger Integration Consultant"
             company="Healthcare Provider"
-            description="Managed integration of two teams post acquisition. Optimized workflows and communication channels."
+            description="Led integration of HR, finance, and marketing post-acquisition. Streamlined workflows and unified teams using best-practice models."
           />
           <ServiceBox
             title="Interested in working together?"
