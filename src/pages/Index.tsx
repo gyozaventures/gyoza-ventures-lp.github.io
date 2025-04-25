@@ -8,19 +8,19 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#F6F8FA] via-[#E9EBEE] to-[#FDFCFA] flex flex-col">
+    <div className="min-h-screen bg-gradient-to-br from-black via-gray-800 to-gray-700 flex flex-col">
       {/* Header */}
       <header className="flex justify-between items-center p-6 md:py-10 md:px-20">
         <img
           src="/lovable-uploads/5e2e9f00-b255-44f5-bd70-096253ab93e3.png"
           alt="Gyoza Ventures Logo"
-          className="h-12 md:h-16 object-contain" // Increased logo size and added object-contain
+          className="h-14 md:h-20 object-contain brightness-200" // Increased size and brightness for better visibility
         />
         <a
           href="https://www.linkedin.com/in/moritzlienert/"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-gray-600 hover:text-gray-800 transition-colors hover:underline"
+          className="text-white hover:text-gray-200 transition-colors hover:underline"
         >
           <Linkedin className="w-6 h-6" />
         </a>
@@ -30,13 +30,16 @@ const Index = () => {
       <main className="flex-1 flex flex-col px-6 md:px-20">
         {/* Headlines */}
         <div className="mb-12 max-w-4xl">
-          <h1 className="text-xl md:text-2xl font-bold text-gray-900 mb-3 leading-tight">
+          <h1 className="text-xl md:text-2xl font-bold text-white mb-3 leading-tight">
             Partner for Interim Leadership and Growth Execution for Corporates and Start-ups
           </h1>
-          <h2 className="text-base md:text-lg text-gray-600 leading-relaxed">
+          <h2 className="text-base md:text-lg text-gray-300 leading-relaxed">
             Where Tactical Execution Meets Strategic Thinking
           </h2>
         </div>
+
+        {/* Selected Projects Heading */}
+        <h2 className="text-xl font-semibold text-white mb-6">Selected Projects</h2>
 
         {/* Service Boxes Grid */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-6xl w-full">
@@ -61,12 +64,12 @@ const Index = () => {
       </main>
 
       {/* Footer */}
-      <footer className="p-6 text-center text-sm text-gray-500">
+      <footer className="p-6 text-center text-sm text-gray-400">
         <a
           href="https://www.gyozaventures.com/imprint"
           target="_blank"
           rel="noopener noreferrer"
-          className="mx-3 hover:text-gray-700"
+          className="mx-3 hover:text-gray-200"
         >
           Imprint
         </a>
@@ -74,7 +77,7 @@ const Index = () => {
           href="https://www.gyozaventures.com/data"
           target="_blank"
           rel="noopener noreferrer"
-          className="mx-3 hover:text-gray-700"
+          className="mx-3 hover:text-gray-200"
         >
           Data Privacy
         </a>
