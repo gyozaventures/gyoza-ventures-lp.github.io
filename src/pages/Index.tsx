@@ -1,5 +1,6 @@
 import { Linkedin } from "lucide-react";
 import ServiceBox from "@/components/ServiceBox";
+import Header from "@/components/Header";
 
 const Index = () => {
   const handleCTAClick = () => {
@@ -8,22 +9,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-black via-gray-800 to-gray-700 flex flex-col">
-      {/* Header */}
-      <header className="flex justify-between items-center p-6 md:py-10 md:px-20">
-        <img
-          src="/lovable-uploads/5e2e9f00-b255-44f5-bd70-096253ab93e3.png"
-          alt="Gyoza Ventures Logo"
-          className="h-7 md:h-10 object-contain brightness-200"
-        />
-        <a
-          href="https://www.linkedin.com/in/moritzlienert/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-white hover:text-gray-200 transition-colors hover:underline"
-        >
-          <Linkedin className="w-6 h-6" />
-        </a>
-      </header>
+      <Header />
 
       {/* Main Content */}
       <main className="flex-1 flex flex-col px-6 md:px-20">
@@ -68,9 +54,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="p-6 text-center text-sm text-gray-400">
         <a
-          href="https://www.gyozaventures.com/imprint"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="/imprint"
           className="mx-3 hover:text-gray-200"
         >
           Imprint
