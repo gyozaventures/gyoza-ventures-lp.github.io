@@ -16,10 +16,10 @@ const Index = () => {
       <main className="flex-1 flex flex-col px-6 md:px-20">
         {/* Headlines */}
         <div className="mb-12 max-w-4xl">
-          <h1 className="text-sm md:text-lg font-bold text-white mb-3 leading-tight">
+          <h1 className="font-inter font-bold text-4xl text-white mb-3 leading-tight">
             Partner for Interim Leadership and Growth Execution for Corporates and Start-ups
           </h1>
-          <h2 className="text-base md:text-lg text-gray-300 leading-relaxed">
+          <h2 className="font-inter font-light text-xl text-gray-400 leading-relaxed">
             Where Tactical Execution Meets Strategic Thinking
           </h2>
         </div>
