@@ -1,7 +1,12 @@
 
 import { Linkedin } from "lucide-react";
+import { Button } from "./ui/button";
 
 const Header = () => {
+  const handleContactClick = () => {
+    window.location.href = "mailto:moritz@gyozaventures.com";
+  };
+
   return (
     <header className="flex justify-between items-center p-6 md:py-10 md:px-20">
       <a
@@ -15,16 +20,26 @@ const Header = () => {
           className="h-7 md:h-10 object-contain brightness-200"
         />
       </a>
-      <a
-        href="https://www.linkedin.com/in/moritzlienert/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-white hover:text-gray-200 transition-colors hover:underline"
-      >
-        <Linkedin className="w-6 h-6" />
-      </a>
+      <div className="flex items-center gap-4">
+        <Button
+          variant="outline"
+          onClick={handleContactClick}
+          className="text-white border-white hover:bg-white hover:text-gray-800"
+        >
+          Contact
+        </Button>
+        <a
+          href="https://www.linkedin.com/in/moritzlienert/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white hover:text-gray-200 transition-colors hover:underline"
+        >
+          <Linkedin className="w-6 h-6" />
+        </a>
+      </div>
     </header>
   );
 };
 
 export default Header;
+
