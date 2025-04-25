@@ -60,9 +60,7 @@ const Index = () => {
           Imprint
         </a>
         <a
-          href="https://www.gyozaventures.com/data"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="/data"
           className="mx-3 hover:text-gray-200"
         >
           Data Privacy
