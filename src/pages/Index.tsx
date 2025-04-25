@@ -1,5 +1,5 @@
 
-import { LinkedIn } from "lucide-react";
+import { Linkedin } from "lucide-react";
 import ServiceBox from "@/components/ServiceBox";
 
 const Index = () => {
@@ -22,7 +22,7 @@ const Index = () => {
           rel="noopener noreferrer"
           className="text-gray-600 hover:text-gray-800 transition-colors"
         >
-          <LinkedIn className="w-6 h-6" />
+          <Linkedin className="w-6 h-6" />
         </a>
       </header>
 
