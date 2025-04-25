@@ -22,20 +22,20 @@ const ServiceBox = ({ title, company, description, isCtaBox, onClick, className 
       onClick={onClick}
     >
       <h3 className={cn(
-        "text-[10px] font-semibold mb-1",
+        "text-[15px] font-semibold mb-1",
         isCtaBox ? "text-white" : "text-gray-800"
       )}>
         {title}
       </h3>
       
       {company && !isCtaBox && (
-        <p className="text-gray-600 text-sm font-medium mb-2">
+        <p className="text-gray-600 text-[15px] font-medium mb-2">
           {company}
         </p>
       )}
       
       {description && !isCtaBox && (
-        <p className="text-gray-600 text-xs leading-relaxed">
+        <p className="text-gray-600 text-[15px] leading-relaxed">
           {description}
         </p>
       )}
