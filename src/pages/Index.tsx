@@ -16,16 +16,16 @@ const Index = () => {
       <main className="flex-1 flex flex-col px-6 md:px-20">
         {/* Headlines */}
         <div className="mb-12 max-w-4xl">
-          <h1 className="font-inter font-bold text-4xl text-white mb-3 leading-tight">
+          <h1 className="font-inter font-bold text-xl text-white mb-3 leading-tight">
             Partner for Interim Leadership and Growth Execution for Corporates and Start-ups
           </h1>
-          <h2 className="font-inter font-light text-xl text-gray-400 leading-relaxed">
+          <h2 className="font-inter font-light text-[10px] text-gray-400 leading-relaxed">
             Where Tactical Execution Meets Strategic Thinking
           </h2>
         </div>
 
         {/* Selected Projects Heading */}
-        <h2 className="text-xl font-semibold text-white mb-6">Selected Projects</h2>
+        <h2 className="text-[10px] font-semibold text-white mb-6">Selected Projects</h2>
 
         {/* Service Boxes Grid */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-6xl w-full">

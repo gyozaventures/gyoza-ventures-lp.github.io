@@ -22,7 +22,7 @@ const ServiceBox = ({ title, company, description, isCtaBox, onClick, className 
       onClick={onClick}
     >
       <h3 className={cn(
-        "text-lg font-semibold mb-1",
+        "text-[10px] font-semibold mb-1",
         isCtaBox ? "text-white" : "text-gray-800"
       )}>
         {title}
