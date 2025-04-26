@@ -17,8 +17,8 @@ const ServiceBox = ({ title, company, description, isCtaBox, onClick, className 
       className={cn(
         "p-6 rounded-xl shadow-lg transition-transform hover:scale-[1.02] cursor-pointer",
         isCtaBox 
-          ? "bg-gradient-to-br from-blue-900 to-blue-800 text-white" 
-          : "bg-gradient-to-br from-blue-50 to-blue-100 hover:shadow-xl",
+          ? "bg-gradient-to-br from-blue-950 to-blue-700 text-white" 
+          : "bg-gradient-to-br from-blue-200 to-blue-50 hover:shadow-xl",
         className
       )}
       onClick={onClick}
