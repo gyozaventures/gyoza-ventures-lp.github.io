@@ -16,7 +16,7 @@ const Index = () => {
         {/* Headlines */}
         <div className="mb-12 max-w-4xl">
           <h1 className="font-inter font-bold text-xl text-white mb-3 leading-tight">
-            Operating Partner & Venture Builder for Corporates and Start-Ups
+            Operating Partner for Corporates, Start-Ups and VC Funds
           </h1>
           <h2 className="font-inter font-light text-[15px] text-gray-400 leading-relaxed">
             Where Tactical Execution Meets Strategic Thinking
