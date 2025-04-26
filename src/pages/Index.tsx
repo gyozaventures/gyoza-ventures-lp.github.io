@@ -1,4 +1,3 @@
-
 import { Linkedin } from "lucide-react";
 import ServiceBox from "@/components/ServiceBox";
 import Header from "@/components/Header";
@@ -17,7 +16,7 @@ const Index = () => {
         {/* Headlines */}
         <div className="mb-12 max-w-4xl">
           <h1 className="font-inter font-bold text-xl text-white mb-3 leading-tight">
-            Partner for Interim Leadership and Growth Execution for Corporates and Start-ups
+            Operating Partner & Venture Builder for Corporates and Start-Ups
           </h1>
           <h2 className="font-inter font-light text-[15px] text-gray-400 leading-relaxed">
             Where Tactical Execution Meets Strategic Thinking
