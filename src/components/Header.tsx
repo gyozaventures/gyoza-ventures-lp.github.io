@@ -1,3 +1,4 @@
+
 import { Linkedin } from "lucide-react";
 import { Button } from "./ui/button";
 
@@ -16,7 +17,7 @@ const Header = () => {
         <img
           src="/lovable-uploads/5e2e9f00-b255-44f5-bd70-096253ab93e3.png"
           alt="Gyoza Ventures Logo"
-          className="h-7 md:h-10 object-contain brightness-200"
+          className="h-5 md:h-7 object-contain brightness-200" // Reduced from h-7 md:h-10 to h-5 md:h-7
         />
       </a>
       <div className="flex items-center gap-4">

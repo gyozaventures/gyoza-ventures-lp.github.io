@@ -15,8 +15,10 @@ const ServiceBox = ({ title, company, description, isCtaBox, onClick, className 
   return (
     <div 
       className={cn(
-        "bg-white p-6 rounded-xl shadow-md transition-transform hover:scale-[1.02] cursor-pointer",
-        isCtaBox ? "bg-blue-900 text-white" : "hover:shadow-lg",
+        "p-6 rounded-xl shadow-lg transition-transform hover:scale-[1.02] cursor-pointer",
+        isCtaBox 
+          ? "bg-gradient-to-br from-blue-900 to-blue-800 text-white" 
+          : "bg-gradient-to-br from-blue-50 to-blue-100 hover:shadow-xl",
         className
       )}
       onClick={onClick}
@@ -50,4 +52,3 @@ const ServiceBox = ({ title, company, description, isCtaBox, onClick, className 
 };
 
 export default ServiceBox;
-
