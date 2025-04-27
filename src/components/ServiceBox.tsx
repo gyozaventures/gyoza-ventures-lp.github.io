@@ -37,7 +37,7 @@ const ServiceBox = ({ title, company, description, isCtaBox, onClick, className 
       )}
       
       {description && !isCtaBox && (
-        <p className="text-gray-600 text-[10px] leading-relaxed">
+        <p className="text-gray-600 text-[12px] leading-relaxed">
           {description}
         </p>
       )}
