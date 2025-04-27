@@ -1,6 +1,8 @@
+
 import { Linkedin } from "lucide-react";
 import ServiceBox from "@/components/ServiceBox";
 import Header from "@/components/Header";
+import AboutMe from "@/components/AboutMe";
 
 const Index = () => {
   const handleCTAClick = () => {
@@ -22,6 +24,9 @@ const Index = () => {
             Where Tactical Execution Meets Strategic Thinking
           </h2>
         </div>
+
+        {/* About Me Section */}
+        <AboutMe />
 
         {/* Selected Projects Heading */}
         <h2 className="text-[15px] font-semibold text-white mb-6">Selected Projects</h2>
