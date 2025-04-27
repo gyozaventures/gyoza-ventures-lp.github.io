@@ -15,10 +15,10 @@ const Index = () => {
 
       {/* Main Content */}
       <main className="flex-1 flex flex-col px-6 md:px-20 overflow-y-auto md:overflow-hidden">
-        <div className="h-full flex flex-col md:justify-between py-6 md:py-10 max-w-6xl mx-auto w-full">
-          {/* Headlines */}
-          <div className="mb-6 md:mb-8">
-            <h1 className="font-inter font-bold text-lg md:text-xl text-white mb-3 leading-tight">
+        <div className="h-full flex flex-col md:justify-between py-3 md:py-6 max-w-6xl mx-auto w-full">
+          {/* Headlines - Reduced vertical spacing from mb-6 md:mb-8 to mb-3 md:mb-4 */}
+          <div className="mb-3 md:mb-4">
+            <h1 className="font-inter font-bold text-lg md:text-xl text-white mb-2 leading-tight">
               Operating Partner for Corporates, Start-Ups and VC Funds
             </h1>
             <h2 className="font-inter font-light text-[13px] md:text-[15px] text-gray-400 leading-relaxed">
