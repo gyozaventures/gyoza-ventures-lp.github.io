@@ -15,7 +15,7 @@ const AboutMe = () => {
         <h2 className="text-[15px] font-semibold text-white mb-4">About Me</h2>
         <div className="space-y-4 text-[10px] text-gray-400 leading-relaxed">
           <p>
-            I support corporates and start-ups as an Interim GM, C-Level Executive, and Venture Advisor, with a focus on Marketing, Operations, Finance and Business Development.
+            Hi, I'm Moritz. I support corporates and start-ups as an Interim GM, C-Level Executive, and Venture Advisor, with a focus on Marketing, Operations, Finance and Business Development.
           </p>
           <p>
             I began my career at Deutsche Lufthansa AG, gained hands-on scaling experience at Rocket Internet SE, and went on to found and grow two companies of my own.
