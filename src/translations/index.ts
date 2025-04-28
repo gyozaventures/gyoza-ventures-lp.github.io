@@ -56,12 +56,12 @@ export const translations = {
       project1: {
         title: "Interims-CMO",
         company: "B2B SaaS-Anbieter",
-        description: "Umstrukturierung des Marketingbetriebs und praktische Verwaltung der Kanäle. Reduzierung der CPL um über 50% und Verdopplung des Lead-Volumens, was zu Rekordquartalsumsätzen führte."
+        description: "Umstrukturierung des Marketings, Reduzierung der CPL um über 50% und Verdopplung des Lead-Volumens, was zu Rekordquartalsumsätzen führte."
       },
       project2: {
         title: "Interims-Betriebsleiter",
         company: "IT-Infrastrukturanbieter",
-        description: "Aufbau skalierbarer Betriebs- und Projektrahmen. Optimierung von Finanzarbeitsabläufen und Einführung eines Ökosystem-Inkubators."
+        description: "Aufbau skalierbarer Betriebs- und Projekprozesse. Optimierung von Finanzarbeitsabläufen und Einführung eines Ecosystem-Inkubators."
       },
       project3: {
         title: "Post-Merger Integrationsberater",
