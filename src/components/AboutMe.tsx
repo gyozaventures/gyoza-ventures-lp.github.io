@@ -18,7 +18,7 @@ const AboutMe = () => {
             Hi, I'm Moritz. I support corporates and start-ups as an Interim GM, C-Level Executive, and Venture Advisor, with a focus on Marketing, Operations, Finance and Business Development.
           </p>
           <p>
-            I began my career at Deutsche Lufthansa AG, gained hands-on scaling experience at Rocket Internet SE, and went on to found and grow two companies of my own.
+            I began my career at Deutsche Lufthansa AG, gained hands-on scaling experience at Rocket Internet SE, and went on to found, grow and exit two companies of my own.
           </p>
           <p>
             With over 10 years of experience, I've raised €7M+ in venture capital, led teams of up to 150 employees, and scaled two ventures from zero to seven-figure annual revenue. Execution-driven, I own strategy and operations end-to-end and can leverage my vast network of domain experts across every critical business function for fast and measurable impact.
