@@ -15,7 +15,7 @@ const AboutMe = () => {
         <img
           src="/lovable-uploads/77a88ba2-5ef3-4367-8a47-de069e01c842.png"
           alt="Profile"
-          className="w-24 md:w-36 h-24 md:h-36 object-cover rounded-xl shadow-lg"
+          className="w-20 md:w-32 h-20 md:h-32 object-cover rounded-xl shadow-lg"
         />
       </div>
       <div className="flex-grow flex flex-col">
@@ -28,59 +28,62 @@ const AboutMe = () => {
           </div>
         </div>
 
-        {/* Category Badges with reduced size and new layout */}
-        <div className="mt-1.5">
-          {/* All badges in a single row with smaller size */}
+        <div className="mt-1.5 space-y-1">
+          {/* First row with funding stages and B2B/B2C buttons */}
           <div className="flex flex-wrap gap-1">
-            <Button variant="outline" size="sm" className="h-6 px-1.5 text-[9px] md:text-[10px] text-blue-800 hover:text-blue-700">
+            <Button variant="outline" size="sm" className="h-5 px-1.5 text-[8px] md:text-[9px] text-blue-800 hover:text-blue-700">
               <Rocket className="mr-1 h-2.5 w-2.5" />
               Pre-Seed
             </Button>
-            <Button variant="outline" size="sm" className="h-6 px-1.5 text-[9px] md:text-[10px] text-blue-800 hover:text-blue-700">
+            <Button variant="outline" size="sm" className="h-5 px-1.5 text-[8px] md:text-[9px] text-blue-800 hover:text-blue-700">
               <Rocket className="mr-1 h-2.5 w-2.5" />
               Seed
             </Button>
-            <Button variant="outline" size="sm" className="h-6 px-1.5 text-[9px] md:text-[10px] text-blue-800 hover:text-blue-700">
+            <Button variant="outline" size="sm" className="h-5 px-1.5 text-[8px] md:text-[9px] text-blue-800 hover:text-blue-700">
               <Rocket className="mr-1 h-2.5 w-2.5" />
               Series A
             </Button>
-            <Button variant="outline" size="sm" className="h-6 px-1.5 text-[9px] md:text-[10px] text-blue-800 hover:text-blue-700">
+            <Button variant="outline" size="sm" className="h-5 px-1.5 text-[8px] md:text-[9px] text-blue-800 hover:text-blue-700">
               <Briefcase className="mr-1 h-2.5 w-2.5" />
               Corporate
             </Button>
-            <Button variant="outline" size="sm" className="h-6 px-1.5 text-[9px] md:text-[10px] text-blue-800 hover:text-blue-700">
+            <Button variant="outline" size="sm" className="h-5 px-1.5 text-[8px] md:text-[9px] text-blue-800 hover:text-blue-700 font-secondary">
               <Building className="mr-1 h-2.5 w-2.5" />
               B2C
             </Button>
-            <Button variant="outline" size="sm" className="h-6 px-1.5 text-[9px] md:text-[10px] text-blue-800 hover:text-blue-700">
+            <Button variant="outline" size="sm" className="h-5 px-1.5 text-[8px] md:text-[9px] text-blue-800 hover:text-blue-700 font-secondary">
               <Briefcase className="mr-1 h-2.5 w-2.5" />
               B2B
             </Button>
-            <Button variant="outline" size="sm" className="h-6 px-1.5 text-[9px] md:text-[10px] text-blue-800 hover:text-blue-700">
+            <Button variant="outline" size="sm" className="h-5 px-1.5 text-[8px] md:text-[9px] text-blue-800 hover:text-blue-700 font-secondary">
               <Briefcase className="mr-1 h-2.5 w-2.5" />
               B2B2C
             </Button>
-            <Button variant="outline" size="sm" className="h-6 px-1.5 text-[9px] md:text-[10px] text-blue-800 hover:text-blue-700">
+          </div>
+          
+          {/* Second row with industry-specific buttons */}
+          <div className="flex flex-wrap gap-1">
+            <Button variant="outline" size="sm" className="h-5 px-1.5 text-[8px] md:text-[9px] text-blue-800 hover:text-blue-700 font-secondary">
               <ShoppingCart className="mr-1 h-2.5 w-2.5" />
               SaaS
             </Button>
-            <Button variant="outline" size="sm" className="h-6 px-1.5 text-[9px] md:text-[10px] text-blue-800 hover:text-blue-700">
+            <Button variant="outline" size="sm" className="h-5 px-1.5 text-[8px] md:text-[9px] text-blue-800 hover:text-blue-700 font-secondary">
               <ShoppingCart className="mr-1 h-2.5 w-2.5" />
               E-Commerce
             </Button>
-            <Button variant="outline" size="sm" className="h-6 px-1.5 text-[9px] md:text-[10px] text-blue-800 hover:text-blue-700">
+            <Button variant="outline" size="sm" className="h-5 px-1.5 text-[8px] md:text-[9px] text-blue-800 hover:text-blue-700 font-secondary">
               <ShoppingCart className="mr-1 h-2.5 w-2.5" />
               DTC
             </Button>
-            <Button variant="outline" size="sm" className="h-6 px-1.5 text-[9px] md:text-[10px] text-blue-800 hover:text-blue-700">
+            <Button variant="outline" size="sm" className="h-5 px-1.5 text-[8px] md:text-[9px] text-blue-800 hover:text-blue-700 font-secondary">
               <Heart className="mr-1 h-2.5 w-2.5" />
               Healthcare
             </Button>
-            <Button variant="outline" size="sm" className="h-6 px-1.5 text-[9px] md:text-[10px] text-blue-800 hover:text-blue-700">
+            <Button variant="outline" size="sm" className="h-5 px-1.5 text-[8px] md:text-[9px] text-blue-800 hover:text-blue-700 font-secondary">
               <Heart className="mr-1 h-2.5 w-2.5" />
               Wellness
             </Button>
-            <Button variant="outline" size="sm" className="h-6 px-1.5 text-[9px] md:text-[10px] text-blue-800 hover:text-blue-700">
+            <Button variant="outline" size="sm" className="h-5 px-1.5 text-[8px] md:text-[9px] text-blue-800 hover:text-blue-700 font-secondary">
               <Briefcase className="mr-1 h-2.5 w-2.5" />
               Web3.0
             </Button>
