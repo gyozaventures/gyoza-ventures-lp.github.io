@@ -19,7 +19,7 @@ const Index = () => {
           {/* Headlines - Reduced vertical spacing from mb-6 md:mb-8 to mb-3 md:mb-4 */}
           <div className="mb-3 md:mb-4">
             <h1 className="font-inter font-bold text-lg md:text-xl text-white mb-2 leading-tight">
-              Operating Partner for Corporates, Start-Ups and VC Funds
+              Venture Partner for Corporates, VC Funds and Start-Ups
             </h1>
             <h2 className="font-inter font-light text-[13px] md:text-[15px] text-gray-400 leading-relaxed">
               Where Tactical Execution Meets Strategic Thinking
