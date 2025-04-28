@@ -1,11 +1,9 @@
 
-import { Rocket, Building, ShoppingCart, Heart, Briefcase } from "lucide-react";
+import { useLanguage } from "@/context/LanguageContext";
+import { translations } from "@/translations";
 import ServiceBox from "@/components/ServiceBox";
 import Header from "@/components/Header";
 import AboutMe from "@/components/AboutMe";
-import { useLanguage } from "@/context/LanguageContext";
-import { translations } from "@/translations";
-import { Button } from "@/components/ui/button";
 
 const Index = () => {
   const { language } = useLanguage();
@@ -22,7 +20,7 @@ const Index = () => {
       {/* Main Content */}
       <main className="flex-1 flex flex-col px-6 md:px-20 overflow-y-auto md:overflow-hidden">
         <div className="h-full flex flex-col md:justify-between py-3 md:py-6 max-w-6xl mx-auto w-full">
-          {/* Headlines - Reduced vertical spacing */}
+          {/* Headlines */}
           <div className="mb-2 md:mb-3">
             <h1 className="font-inter font-bold text-lg md:text-xl text-white mb-2 leading-tight">
               {t.headline}
@@ -35,7 +33,7 @@ const Index = () => {
           {/* About Me Section */}
           <AboutMe />
 
-          {/* Selected Projects Section - Reduced gap and padding */}
+          {/* Selected Projects Section */}
           <div className="flex-shrink-0">
             <h2 className="text-[13px] md:text-[15px] font-semibold text-white mb-3">{t.projects.title}</h2>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-3 md:gap-4">
@@ -62,73 +60,6 @@ const Index = () => {
                 isCtaBox
                 onClick={handleCTAClick}
               />
-            </div>
-
-            {/* Category Buttons - Reduced top margin and vertical spacing */}
-            <div className="mt-4 space-y-2">
-              {/* Funding Stage */}
-              <div className="flex flex-wrap gap-2">
-                <Button variant="outline" size="sm" className="text-gray-300 hover:text-white">
-                  <Rocket className="mr-1 h-4 w-4" />
-                  Pre-Seed
-                </Button>
-                <Button variant="outline" size="sm" className="text-gray-300 hover:text-white">
-                  <Rocket className="mr-1 h-4 w-4" />
-                  Seed
-                </Button>
-                <Button variant="outline" size="sm" className="text-gray-300 hover:text-white">
-                  <Rocket className="mr-1 h-4 w-4" />
-                  Series A
-                </Button>
-                <Button variant="outline" size="sm" className="text-gray-300 hover:text-white">
-                  <Briefcase className="mr-1 h-4 w-4" />
-                  Corporate
-                </Button>
-              </div>
-
-              {/* Business Model */}
-              <div className="flex flex-wrap gap-2">
-                <Button variant="outline" size="sm" className="text-gray-300 hover:text-white">
-                  <Building className="mr-1 h-4 w-4" />
-                  B2C
-                </Button>
-                <Button variant="outline" size="sm" className="text-gray-300 hover:text-white">
-                  <Briefcase className="mr-1 h-4 w-4" />
-                  B2B
-                </Button>
-                <Button variant="outline" size="sm" className="text-gray-300 hover:text-white">
-                  <Briefcase className="mr-1 h-4 w-4" />
-                  B2B2C
-                </Button>
-              </div>
-
-              {/* Industry */}
-              <div className="flex flex-wrap gap-2">
-                <Button variant="outline" size="sm" className="text-gray-300 hover:text-white">
-                  <ShoppingCart className="mr-1 h-4 w-4" />
-                  SaaS
-                </Button>
-                <Button variant="outline" size="sm" className="text-gray-300 hover:text-white">
-                  <ShoppingCart className="mr-1 h-4 w-4" />
-                  E-Commerce
-                </Button>
-                <Button variant="outline" size="sm" className="text-gray-300 hover:text-white">
-                  <ShoppingCart className="mr-1 h-4 w-4" />
-                  DTC
-                </Button>
-                <Button variant="outline" size="sm" className="text-gray-300 hover:text-white">
-                  <Heart className="mr-1 h-4 w-4" />
-                  Healthcare
-                </Button>
-                <Button variant="outline" size="sm" className="text-gray-300 hover:text-white">
-                  <Heart className="mr-1 h-4 w-4" />
-                  Wellness
-                </Button>
-                <Button variant="outline" size="sm" className="text-gray-300 hover:text-white">
-                  <Briefcase className="mr-1 h-4 w-4" />
-                  Web3.0
-                </Button>
-              </div>
             </div>
           </div>
         </div>
