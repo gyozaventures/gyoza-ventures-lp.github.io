@@ -42,16 +42,19 @@ const Index = () => {
                 title={t.projects.project1.title}
                 company={t.projects.project1.company} 
                 description={t.projects.project1.description}
+                labels={t.projects.project1.labels}
               />
               <ServiceBox 
                 title={t.projects.project2.title}
                 company={t.projects.project2.company}
                 description={t.projects.project2.description}
+                labels={t.projects.project2.labels}
               />
               <ServiceBox 
                 title={t.projects.project3.title}
                 company={t.projects.project3.company}
                 description={t.projects.project3.description}
+                labels={t.projects.project3.labels}
               />
               <ServiceBox
                 title={t.projects.cta.title}

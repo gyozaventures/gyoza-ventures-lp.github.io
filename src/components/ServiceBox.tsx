@@ -43,7 +43,7 @@ const ServiceBox = ({ title, company, description, labels, isCtaBox, onClick, cl
         </p>
       )}
 
-      {labels && !isCtaBox && (
+      {labels && labels.length > 0 && !isCtaBox && (
         <div className="flex flex-wrap gap-1.5 mb-2">
           {labels.map((label, index) => (
             <Badge 
