@@ -22,7 +22,7 @@ const Index = () => {
               Venture Partner for Corporates, VC Funds and Start-Ups
             </h1>
             <h2 className="font-inter font-light text-[13px] md:text-[15px] text-gray-400 leading-relaxed">
-              Where Tactical Execution Meets Strategic Thinking
+              Impact you can measure — from day one.
             </h2>
           </div>
 
