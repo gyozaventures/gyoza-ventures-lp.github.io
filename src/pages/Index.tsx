@@ -22,8 +22,8 @@ const Index = () => {
       {/* Main Content */}
       <main className="flex-1 flex flex-col px-6 md:px-20 overflow-y-auto md:overflow-hidden">
         <div className="h-full flex flex-col md:justify-between py-3 md:py-6 max-w-6xl mx-auto w-full">
-          {/* Headlines - Reduced vertical spacing from mb-6 md:mb-8 to mb-3 md:mb-4 */}
-          <div className="mb-3 md:mb-4">
+          {/* Headlines - Reduced vertical spacing */}
+          <div className="mb-2 md:mb-3">
             <h1 className="font-inter font-bold text-lg md:text-xl text-white mb-2 leading-tight">
               {t.headline}
             </h1>
@@ -35,10 +35,10 @@ const Index = () => {
           {/* About Me Section */}
           <AboutMe />
 
-          {/* Selected Projects Section */}
+          {/* Selected Projects Section - Reduced gap and padding */}
           <div className="flex-shrink-0">
-            <h2 className="text-[13px] md:text-[15px] font-semibold text-white mb-4">{t.projects.title}</h2>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6">
+            <h2 className="text-[13px] md:text-[15px] font-semibold text-white mb-3">{t.projects.title}</h2>
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-3 md:gap-4">
               <ServiceBox 
                 title={t.projects.project1.title}
                 company={t.projects.project1.company} 
@@ -64,8 +64,8 @@ const Index = () => {
               />
             </div>
 
-            {/* Category Buttons */}
-            <div className="mt-8 space-y-3">
+            {/* Category Buttons - Reduced top margin and vertical spacing */}
+            <div className="mt-4 space-y-2">
               {/* Funding Stage */}
               <div className="flex flex-wrap gap-2">
                 <Button variant="outline" size="sm" className="text-gray-300 hover:text-white">
