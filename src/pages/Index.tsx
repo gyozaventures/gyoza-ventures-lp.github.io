@@ -18,14 +18,14 @@ const Index = () => {
       <Header />
 
       {/* Main Content */}
-      <main className="flex-1 flex flex-col px-6 md:px-20 overflow-y-auto md:overflow-hidden">
-        <div className="h-full flex flex-col md:justify-between py-3 md:py-6 max-w-6xl mx-auto w-full">
+      <main className="flex-1 flex flex-col px-5 md:px-16 overflow-y-auto md:overflow-hidden">
+        <div className="h-full flex flex-col md:justify-between py-2 md:py-4 max-w-6xl mx-auto w-full">
           {/* Headlines */}
-          <div className="mb-2 md:mb-3">
-            <h1 className="font-inter font-bold text-lg md:text-xl text-white mb-2 leading-tight">
+          <div className="mb-1.5 md:mb-2">
+            <h1 className="font-inter font-bold text-lg md:text-xl text-white mb-1.5 leading-tight">
               {t.headline}
             </h1>
-            <h2 className="font-inter font-light text-[13px] md:text-[15px] text-gray-400 leading-relaxed">
+            <h2 className="font-inter font-light text-[12px] md:text-[14px] text-gray-400 leading-relaxed">
               {t.subheadline}
             </h2>
           </div>
@@ -35,8 +35,8 @@ const Index = () => {
 
           {/* Selected Projects Section */}
           <div className="flex-shrink-0">
-            <h2 className="text-[13px] md:text-[15px] font-semibold text-white mb-3">{t.projects.title}</h2>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-3 md:gap-4">
+            <h2 className="text-[12px] md:text-[14px] font-semibold text-white mb-2">{t.projects.title}</h2>
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-2 md:gap-3 mb-2">
               <ServiceBox 
                 title={t.projects.project1.title}
                 company={t.projects.project1.company} 
@@ -66,9 +66,9 @@ const Index = () => {
       </main>
 
       {/* Footer */}
-      <footer className="flex-shrink-0 p-4 md:p-6 text-center text-sm text-gray-400">
-        <a href="/imprint" className="mx-3 hover:text-gray-200">{t.footer.imprint}</a>
-        <a href="/data" className="mx-3 hover:text-gray-200">{t.footer.dataPrivacy}</a>
+      <footer className="flex-shrink-0 p-2 md:p-3 text-center text-xs text-gray-400">
+        <a href="/imprint" className="mx-2 hover:text-gray-200">{t.footer.imprint}</a>
+        <a href="/data" className="mx-2 hover:text-gray-200">{t.footer.dataPrivacy}</a>
       </footer>
     </div>
   );
