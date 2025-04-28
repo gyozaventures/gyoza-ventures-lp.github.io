@@ -1,4 +1,3 @@
-
 export const translations = {
   en: {
     header: {
@@ -17,17 +16,20 @@ export const translations = {
       project1: {
         title: "Interim CMO",
         company: "B2B SaaS Provider",
-        description: "Restructured marketing operations and managed channels hands-on. Cut CPL by over 50% and doubled lead volume, driving record quarterly sales."
+        description: "Restructured marketing operations and managed channels hands-on. Cut CPL by over 50% and doubled lead volume, driving record quarterly sales.",
+        labels: ["Seed", "B2B", "SaaS"]
       },
       project2: {
         title: "Interim Director Operations",
         company: "IT Infrastructure Provider",
-        description: "Built scalable ops and project frameworks. Optimized finance workflows and launched an ecosystem incubator."
+        description: "Built scalable ops and project frameworks. Optimized finance workflows and launched an ecosystem incubator.",
+        labels: ["Series A", "B2B", "Web3.0"]
       },
       project3: {
         title: "Post-Merger Integration Consultant",
         company: "Healthcare Provider",
-        description: "Led integration of HR, finance, and marketing post-acquisition. Streamlined workflows and unified teams using best-practice models."
+        description: "Led integration of HR, finance, and marketing post-acquisition. Streamlined workflows and unified teams using best-practice models.",
+        labels: ["Corporate", "B2C", "Healthcare"]
       },
       cta: {
         title: "Interested in working together?",
@@ -56,17 +58,20 @@ export const translations = {
       project1: {
         title: "Interims-CMO",
         company: "B2B SaaS-Anbieter",
-        description: "Umstrukturierung des Marketings, Reduzierung der CPL um über 50% und Verdopplung des Lead-Volumens, was zu Rekordquartalsumsätzen führte."
+        description: "Umstrukturierung des Marketings, Reduzierung der CPL um über 50% und Verdopplung des Lead-Volumens, was zu Rekordquartalsumsätzen führte.",
+        labels: ["Seed", "B2B", "SaaS"]
       },
       project2: {
         title: "Interims-Betriebsleiter",
         company: "IT-Infrastrukturanbieter",
-        description: "Aufbau skalierbarer Betriebs- und Projekprozesse. Optimierung von Finanzarbeitsabläufen und Einführung eines Ecosystem-Inkubators."
+        description: "Aufbau skalierbarer Betriebs- und Projekprozesse. Optimierung von Finanzarbeitsabläufen und Einführung eines Ecosystem-Inkubators.",
+        labels: ["Series A", "B2B", "Web3.0"]
       },
       project3: {
         title: "Post-Merger Integrationsberater",
         company: "Gesundheitsdienstleister",
-        description: "Leitung der Integration von HR, Finanzen und Marketing nach der Akquisition. Optimierung der Arbeitsabläufe und Vereinigung der Teams mit Best-Practice-Modellen."
+        description: "Leitung der Integration von HR, Finanzen und Marketing nach der Akquisition. Optimierung der Arbeitsabläufe und Vereinigung der Teams mit Best-Practice-Modellen.",
+        labels: ["Corporate", "B2C", "Healthcare"]
       },
       cta: {
         title: "Interesse an einer Zusammenarbeit?",
