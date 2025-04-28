@@ -3,8 +3,13 @@ import { Linkedin } from "lucide-react";
 import ServiceBox from "@/components/ServiceBox";
 import Header from "@/components/Header";
 import AboutMe from "@/components/AboutMe";
+import { useLanguage } from "@/context/LanguageContext";
+import { translations } from "@/translations";
 
 const Index = () => {
+  const { language } = useLanguage();
+  const t = translations[language];
+
   const handleCTAClick = () => {
     window.location.href = "mailto:info@gyozaventures.com";
   };
@@ -19,10 +24,10 @@ const Index = () => {
           {/* Headlines - Reduced vertical spacing from mb-6 md:mb-8 to mb-3 md:mb-4 */}
           <div className="mb-3 md:mb-4">
             <h1 className="font-inter font-bold text-lg md:text-xl text-white mb-2 leading-tight">
-              Venture Partner for Corporates, VC Funds and Start-Ups
+              {t.headline}
             </h1>
             <h2 className="font-inter font-light text-[13px] md:text-[15px] text-gray-400 leading-relaxed">
-              Impact you can measure — from day one.
+              {t.subheadline}
             </h2>
           </div>
 
@@ -31,25 +36,25 @@ const Index = () => {
 
           {/* Selected Projects Section */}
           <div className="flex-shrink-0">
-            <h2 className="text-[13px] md:text-[15px] font-semibold text-white mb-4">Selected Projects</h2>
+            <h2 className="text-[13px] md:text-[15px] font-semibold text-white mb-4">{t.projects.title}</h2>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6">
               <ServiceBox 
-                title="Interim CMO"
-                company="B2B SaaS Provider" 
-                description="Restructured marketing operations and managed channels hands-on. Cut CPL by over 50% and doubled lead volume, driving record quarterly sales."
+                title={t.projects.project1.title}
+                company={t.projects.project1.company} 
+                description={t.projects.project1.description}
               />
               <ServiceBox 
-                title="Interim Director Operations"
-                company="IT Infrastructure Provider"
-                description="Built scalable ops and project frameworks. Optimized finance workflows and launched an ecosystem incubator."
+                title={t.projects.project2.title}
+                company={t.projects.project2.company}
+                description={t.projects.project2.description}
               />
               <ServiceBox 
-                title="Post-Merger Integration Consultant"
-                company="Healthcare Provider"
-                description="Led integration of HR, finance, and marketing post-acquisition. Streamlined workflows and unified teams using best-practice models."
+                title={t.projects.project3.title}
+                company={t.projects.project3.company}
+                description={t.projects.project3.description}
               />
               <ServiceBox
-                title="Interested in working together?"
+                title={t.projects.cta.title}
                 isCtaBox
                 onClick={handleCTAClick}
               />
@@ -60,8 +65,8 @@ const Index = () => {
 
       {/* Footer */}
       <footer className="flex-shrink-0 p-4 md:p-6 text-center text-sm text-gray-400">
-        <a href="/imprint" className="mx-3 hover:text-gray-200">Imprint</a>
-        <a href="/data" className="mx-3 hover:text-gray-200">Data Privacy</a>
+        <a href="/imprint" className="mx-3 hover:text-gray-200">{t.footer.imprint}</a>
+        <a href="/data" className="mx-3 hover:text-gray-200">{t.footer.dataPrivacy}</a>
       </footer>
     </div>
   );

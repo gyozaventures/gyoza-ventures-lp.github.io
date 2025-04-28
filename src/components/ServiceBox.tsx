@@ -1,6 +1,8 @@
 
 import React from 'react';
 import { cn } from "@/lib/utils";
+import { useLanguage } from '@/context/LanguageContext';
+import { translations } from '@/translations';
 
 interface ServiceBoxProps {
   title: string;
@@ -12,6 +14,9 @@ interface ServiceBoxProps {
 }
 
 const ServiceBox = ({ title, company, description, isCtaBox, onClick, className }: ServiceBoxProps) => {
+  const { language } = useLanguage();
+  const t = translations[language].projects;
+
   return (
     <div 
       className={cn(
@@ -44,7 +49,7 @@ const ServiceBox = ({ title, company, description, isCtaBox, onClick, className 
       
       {isCtaBox && (
         <button className="mt-4 px-4 md:px-6 py-2 md:py-3 bg-white text-blue-900 rounded-full font-medium hover:bg-gray-100 transition-colors text-[11px] md:text-sm">
-          Let's Talk
+          {t.cta.button}
         </button>
       )}
     </div>
