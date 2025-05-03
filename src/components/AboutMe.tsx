@@ -2,7 +2,7 @@
 import React from 'react';
 import { useLanguage } from '@/context/LanguageContext';
 import { translations } from '@/translations';
-import { Button } from '@/components/ui/button';
+import { Badge } from '@/components/ui/badge';
 import { Rocket, Building, ShoppingCart, Heart, Briefcase } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -72,88 +72,88 @@ const AboutMe = () => {
           transition={{ delay: 0.5 }}
         >
           {/* First row with funding stages and B2B/B2C buttons */}
-          <div className="flex flex-wrap gap-1">
+          <div className="flex flex-wrap gap-1.5">
             <motion.div variants={itemVariants} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-              <Button variant="outline" size="sm" className="h-5 px-1.5 text-[8px] md:text-[9px] text-blue-400 hover:text-blue-300 backdrop-blur-sm border-blue-400/30 hover:border-blue-300/50">
+              <Badge className="bg-blue-100/80 text-blue-800 hover:bg-blue-200 text-[10px] md:text-[11px] backdrop-blur-sm flex items-center">
                 <Rocket className="mr-1 h-2.5 w-2.5" />
                 Pre-Seed
-              </Button>
+              </Badge>
             </motion.div>
             <motion.div variants={itemVariants} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-              <Button variant="outline" size="sm" className="h-5 px-1.5 text-[8px] md:text-[9px] text-blue-400 hover:text-blue-300 backdrop-blur-sm border-blue-400/30 hover:border-blue-300/50">
+              <Badge className="bg-blue-100/80 text-blue-800 hover:bg-blue-200 text-[10px] md:text-[11px] backdrop-blur-sm flex items-center">
                 <Rocket className="mr-1 h-2.5 w-2.5" />
                 Seed
-              </Button>
+              </Badge>
             </motion.div>
             <motion.div variants={itemVariants} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-              <Button variant="outline" size="sm" className="h-5 px-1.5 text-[8px] md:text-[9px] text-blue-400 hover:text-blue-300 backdrop-blur-sm border-blue-400/30 hover:border-blue-300/50">
+              <Badge className="bg-blue-100/80 text-blue-800 hover:bg-blue-200 text-[10px] md:text-[11px] backdrop-blur-sm flex items-center">
                 <Rocket className="mr-1 h-2.5 w-2.5" />
                 Series A
-              </Button>
+              </Badge>
             </motion.div>
             <motion.div variants={itemVariants} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-              <Button variant="outline" size="sm" className="h-5 px-1.5 text-[8px] md:text-[9px] text-blue-400 hover:text-blue-300 backdrop-blur-sm border-blue-400/30 hover:border-blue-300/50">
+              <Badge className="bg-blue-100/80 text-blue-800 hover:bg-blue-200 text-[10px] md:text-[11px] backdrop-blur-sm flex items-center">
                 <Briefcase className="mr-1 h-2.5 w-2.5" />
                 Corporate
-              </Button>
+              </Badge>
             </motion.div>
             <motion.div variants={itemVariants} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-              <Button variant="outline" size="sm" className="h-5 px-1.5 text-[8px] md:text-[9px] text-blue-400 hover:text-blue-300 backdrop-blur-sm border-blue-400/30 hover:border-blue-300/50 font-secondary">
+              <Badge className="bg-blue-100/80 text-blue-800 hover:bg-blue-200 text-[10px] md:text-[11px] backdrop-blur-sm flex items-center">
                 <Building className="mr-1 h-2.5 w-2.5" />
                 B2C
-              </Button>
+              </Badge>
             </motion.div>
             <motion.div variants={itemVariants} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-              <Button variant="outline" size="sm" className="h-5 px-1.5 text-[8px] md:text-[9px] text-blue-400 hover:text-blue-300 backdrop-blur-sm border-blue-400/30 hover:border-blue-300/50 font-secondary">
+              <Badge className="bg-blue-100/80 text-blue-800 hover:bg-blue-200 text-[10px] md:text-[11px] backdrop-blur-sm flex items-center">
                 <Briefcase className="mr-1 h-2.5 w-2.5" />
                 B2B
-              </Button>
+              </Badge>
             </motion.div>
             <motion.div variants={itemVariants} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-              <Button variant="outline" size="sm" className="h-5 px-1.5 text-[8px] md:text-[9px] text-blue-400 hover:text-blue-300 backdrop-blur-sm border-blue-400/30 hover:border-blue-300/50 font-secondary">
+              <Badge className="bg-blue-100/80 text-blue-800 hover:bg-blue-200 text-[10px] md:text-[11px] backdrop-blur-sm flex items-center">
                 <Briefcase className="mr-1 h-2.5 w-2.5" />
                 B2B2C
-              </Button>
+              </Badge>
             </motion.div>
           </div>
           
           {/* Second row with industry-specific buttons */}
-          <div className="flex flex-wrap gap-1">
+          <div className="flex flex-wrap gap-1.5">
             <motion.div variants={itemVariants} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-              <Button variant="outline" size="sm" className="h-5 px-1.5 text-[8px] md:text-[9px] text-blue-400 hover:text-blue-300 backdrop-blur-sm border-blue-400/30 hover:border-blue-300/50 font-sans">
+              <Badge className="bg-blue-100/80 text-blue-800 hover:bg-blue-200 text-[10px] md:text-[11px] backdrop-blur-sm flex items-center">
                 <ShoppingCart className="mr-1 h-2.5 w-2.5" />
                 SaaS
-              </Button>
+              </Badge>
             </motion.div>
             <motion.div variants={itemVariants} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-              <Button variant="outline" size="sm" className="h-5 px-1.5 text-[8px] md:text-[9px] text-blue-400 hover:text-blue-300 backdrop-blur-sm border-blue-400/30 hover:border-blue-300/50 font-sans">
+              <Badge className="bg-blue-100/80 text-blue-800 hover:bg-blue-200 text-[10px] md:text-[11px] backdrop-blur-sm flex items-center">
                 <ShoppingCart className="mr-1 h-2.5 w-2.5" />
                 E-Commerce
-              </Button>
+              </Badge>
             </motion.div>
             <motion.div variants={itemVariants} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-              <Button variant="outline" size="sm" className="h-5 px-1.5 text-[8px] md:text-[9px] text-blue-400 hover:text-blue-300 backdrop-blur-sm border-blue-400/30 hover:border-blue-300/50 font-sans">
+              <Badge className="bg-blue-100/80 text-blue-800 hover:bg-blue-200 text-[10px] md:text-[11px] backdrop-blur-sm flex items-center">
                 <ShoppingCart className="mr-1 h-2.5 w-2.5" />
                 DTC
-              </Button>
+              </Badge>
             </motion.div>
             <motion.div variants={itemVariants} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-              <Button variant="outline" size="sm" className="h-5 px-1.5 text-[8px] md:text-[9px] text-blue-400 hover:text-blue-300 backdrop-blur-sm border-blue-400/30 hover:border-blue-300/50 font-sans">
+              <Badge className="bg-blue-100/80 text-blue-800 hover:bg-blue-200 text-[10px] md:text-[11px] backdrop-blur-sm flex items-center">
                 <Heart className="mr-1 h-2.5 w-2.5" />
                 Healthcare
-              </Button>
+              </Badge>
             </motion.div>
             <motion.div variants={itemVariants} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-              <Button variant="outline" size="sm" className="h-5 px-1.5 text-[8px] md:text-[9px] text-blue-400 hover:text-blue-300 backdrop-blur-sm border-blue-400/30 hover:border-blue-300/50 font-sans">
+              <Badge className="bg-blue-100/80 text-blue-800 hover:bg-blue-200 text-[10px] md:text-[11px] backdrop-blur-sm flex items-center">
                 <Heart className="mr-1 h-2.5 w-2.5" />
                 Wellness
-              </Button>
+              </Badge>
             </motion.div>
             <motion.div variants={itemVariants} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-              <Button variant="outline" size="sm" className="h-5 px-1.5 text-[8px] md:text-[9px] text-blue-400 hover:text-blue-300 backdrop-blur-sm border-blue-400/30 hover:border-blue-300/50 font-sans">
+              <Badge className="bg-blue-100/80 text-blue-800 hover:bg-blue-200 text-[10px] md:text-[11px] backdrop-blur-sm flex items-center">
                 <Briefcase className="mr-1 h-2.5 w-2.5" />
                 Web3.0
-              </Button>
+              </Badge>
             </motion.div>
           </div>
         </motion.div>
